@@ -3,5 +3,5 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def login(req):
-    return HttpResponse("oi")
+def login(request):
+    return render(request, 'market_auth/pages/login.html')
