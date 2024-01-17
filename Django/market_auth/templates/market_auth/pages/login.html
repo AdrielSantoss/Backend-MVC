@@ -1,16 +1,21 @@
-{% extends "global/head.html" %}
+{% extends "global/main.html" %}
 
-<!DOCTYPE html>
-<html lang="pt-br">
-    {% include "global/head.html" %}
-    {% block content %}
-        <title>teste</title>
-    {% endblock content %}
-<body>
-    <div class="bg-success">
-        teste
+{% block content %}
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        Entre com sua conta
     </div>
-    shujdsyhi
-    
-</body>
-</html>
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Digite o e-mail">
+                <input type="password" class="form-control mt-2" placeholder="Digite a senha">
+            </div>
+        </form>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-primary">Entrar</button>
+        <button class="btn btn-secondary">Voltar</button>
+    </div>
+</div>
+{% endblock content %}
